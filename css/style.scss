@@ -3,11 +3,13 @@
 body {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
+
+//  LANDING
 .landing {
   width: 100vw;
   height: 100vh;
-  overflow-x: hidden;
 
   .img {
     background: url(../img/bg.png) center center / cover;
@@ -52,20 +54,45 @@ body {
   }
 }
 
-@keyframes img {
-  0% {
-    transform: translateX(50vw);
-  }
-  50% {
-    transform: translateX(-5vw);
-  }
-}
+// @keyframes img {
+//   0% {
+//     transform: translateX(50vw);
+//   }
+//   50% {
+//     transform: translateX(-5vw);
+//   }
+// }
 
-@keyframes h1 {
-  0% {
-    transform: translateY(-150vh);
+// @keyframes h1 {
+//   0% {
+//     transform: translateY(-150vh);
+//   }
+//   50% {
+//     transform: translateY(0);
+//   }
+// }
+
+// INFO
+.infoSection {
+  height: 40vh;
+  background: radial-gradient(#28c770, #000000e0),
+    url(https://images.pexels.com/photos/194511/pexels-photo-194511.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)
+      no-repeat center center / cover;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    color: #fff;
+    text-align: center;
+    margin-top: 5vh;
+    font-weight: 300;
+    font-size: 3em;
   }
-  50% {
-    transform: translateY(0);
+  p {
+    color: #fff;
+    width: 90vw;
+    margin: 0 auto;
+    line-height: 2;
+    text-align: center;
   }
 }
