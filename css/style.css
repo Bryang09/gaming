@@ -36,6 +36,8 @@ body {
 .landing .img img {
   height: 580px;
   margin-left: 13vw;
+  -webkit-animation: img 1s ease;
+          animation: img 1s ease;
 }
 
 .landing .img .text {
@@ -58,12 +60,61 @@ body {
 .landing .img .text h1 {
   font-size: 3.5em;
   text-align: center;
-  color: #8ab5e0;
+  color: #4a8cff;
+  -webkit-animation: h1 5s ease;
+          animation: h1 5s ease;
 }
 
 .landing .img .text h3 {
   font-size: 2em;
   text-align: center;
   font-weight: 300;
+  color: #4a8cff;
+  -webkit-animation: h1 6s ease;
+          animation: h1 6s ease;
+}
+
+@-webkit-keyframes img {
+  0% {
+    -webkit-transform: translateX(50vw);
+            transform: translateX(50vw);
+  }
+  50% {
+    -webkit-transform: translateX(-5vw);
+            transform: translateX(-5vw);
+  }
+}
+
+@keyframes img {
+  0% {
+    -webkit-transform: translateX(50vw);
+            transform: translateX(50vw);
+  }
+  50% {
+    -webkit-transform: translateX(-5vw);
+            transform: translateX(-5vw);
+  }
+}
+
+@-webkit-keyframes h1 {
+  0% {
+    -webkit-transform: translateY(-150vh);
+            transform: translateY(-150vh);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes h1 {
+  0% {
+    -webkit-transform: translateY(-150vh);
+            transform: translateY(-150vh);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 /*# sourceMappingURL=style.css.map */

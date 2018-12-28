@@ -25,6 +25,7 @@ body {
     img {
       height: 580px;
       margin-left: 13vw;
+      animation: img 1s ease;
     }
     .text {
       width: 50%;
@@ -36,14 +37,35 @@ body {
       h1 {
         font-size: 3.5em;
         text-align: center;
-        color: #8ab5e0;
+        color: #4a8cff;
+        animation: h1 5s ease;
       }
 
       h3 {
         font-size: 2em;
         text-align: center;
         font-weight: 300;
+        color: #4a8cff;
+        animation: h1 6s ease;
       }
     }
+  }
+}
+
+@keyframes img {
+  0% {
+    transform: translateX(50vw);
+  }
+  50% {
+    transform: translateX(-5vw);
+  }
+}
+
+@keyframes h1 {
+  0% {
+    transform: translateY(-150vh);
+  }
+  50% {
+    transform: translateY(0);
   }
 }
